@@ -3,15 +3,16 @@ export type MediaType = 'movie' | 'series';
 
 // Base Media interface
 export interface Media {
-  id: string;
-  type: MediaType;
-  title: string;
-  description?: string;
-  releaseDate?: string;
-  poster?: string;
-  backdrop?: string;
-  createdAt: Date;
-  updatedAt: Date;
+ id: string;
+ type: MediaType;
+ title: string;
+ description?: string;
+ releaseDate?: string;
+ poster?: string;
+ backdrop?: string;
+ createdAt: Date;
+ updatedAt: Date;
+ source: 'tmdb';
 }
 
 // Movie variant
