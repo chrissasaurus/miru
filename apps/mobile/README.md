@@ -227,7 +227,7 @@ npm install
 - Ensure all dependencies are properly installed
 - Restart TypeScript server in your IDE
 
-## Resources
+### Resources
 
 - [Expo Documentation](https://docs.expo.dev/)
 - [React Native Documentation](https://reactnative.dev/)
