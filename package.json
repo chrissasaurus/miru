@@ -15,7 +15,8 @@
     "clean": "turbo run clean"
   },
   "devDependencies": {
-    "turbo": "^1.13.3"
+    "@types/react": "~19.1.10",
+    "turbo": "^2.0.0"
   },
   "packageManager": "npm@10.0.0"
 }
