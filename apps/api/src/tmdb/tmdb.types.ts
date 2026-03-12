@@ -169,3 +169,21 @@ export interface SeriesSearchResult {
   original_name: string;
   genre_ids: number[];
 }
+
+// types/api.ts
+export interface ApiResponse<T> {
+  data: T | null;
+  error: string | null;
+  status: number;
+}
+
+export class ApiError extends Error {
+  constructor(
+    public status: number,
+    message: string,
+    public response?: unknown
+  ) {
+    super(message);
+    this.name = "ApiError";
+  }
+}
