@@ -1,9 +1,11 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TmdbModule } from './tmdb/tmdb.module';
+import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true }), TmdbModule],
+  imports: [ConfigModule.forRoot({ isGlobal: true }), TmdbModule, UsersModule],
   controllers: [],
   providers: [],
 })
