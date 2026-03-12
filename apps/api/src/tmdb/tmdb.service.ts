@@ -21,9 +21,10 @@ interface FetchOptions {
 
 @Injectable()
 export class TmdbService {
+  private readonly defaultTimeout = 10_000;
+
   constructor(
     private readonly configService: ConfigService,
-    private readonly defaultTimeout = 10_000,
   ) {}
 
   private get baseUrl(): string {
